@@ -47,3 +47,10 @@ body {
 .dx-theme-android #deleteConfirmation {
     height: 150px !important;
 }
+.number-red{
+    border-radius:30px;
+    background-color: red;
+    color:white;
+    font-weight: bold;
+    padding:2px 6px;
+}

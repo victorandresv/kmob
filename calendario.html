@@ -1,0 +1,11 @@
+<div data-options="dxView : { name: 'Index', title: 'Calendario' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " > 
+
+        <div data-bind="dxList:{dataSource: employees, grouped:true}">
+            <div data-options="dxTemplate:{name:'item'}">
+                <span data-bind="text: $data.name"></span> <span data-bind="html: $data.hired"></span>
+            </div>   
+        </div>
+
+    </div>
+</div>
