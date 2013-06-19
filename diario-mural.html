@@ -1,9 +1,20 @@
 <div data-options="dxView : { name: 'Index', title: 'Diario mural' } " >
-    <div  data-options="dxContent : { targetPlaceholder: 'content' } " > 
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
 
-        <div data-bind="dxList:{dataSource: employees, grouped:true}">
+        <div data-bind="dxPopup:{visible: DiarioMuralDetalle, fullScreen:true, title: 'Diario Mural', showTitle: true}">
+            <div data-option="dxTemplate{name: 'title'}">
+                <p id='dx_title_popup'></p>
+            </div>
+            <div data-option="dxTemplate{name: 'content'}">
+                <p id='dx_content_popup'></p>
+            </div>
+        </div>
+
+        <div data-bind="dxList:{dataSource: DiarioMuralFechas, grouped:true, itemClickAction:diarioMuralItemOnClick}">
             <div data-options="dxTemplate:{name:'item'}">
-                <span data-bind="text: $data.name"></span> <span data-bind="html: $data.hired"></span>
+                <span data-bind="text: $data.name"></span>  
+                <span data-bind="html: $data.day"></span> 
+                <span data-bind="html: $data.notify"></span> 
             </div>   
         </div>
 
