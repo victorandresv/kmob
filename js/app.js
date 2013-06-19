@@ -3,7 +3,7 @@ window.Application5 = $.extend(true, window.Application5, {
         "defaultLayout": "slideout",
         "navigation": [
             {
-                title: "Calendario",
+                title: "Diario mural",
                 action: "#Index",
                 icon: "event"
             },
