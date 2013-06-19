@@ -2,11 +2,13 @@
     <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
 
         <div data-bind="dxPopup:{visible: DiarioMuralDetalle, fullScreen:true, title: 'Diario Mural', showTitle: true}">
-            <div data-option="dxTemplate{name: 'title'}">
-                <p id='dx_title_popup'></p>
-            </div>
-            <div data-option="dxTemplate{name: 'content'}">
-                <p id='dx_content_popup'></p>
+            <div data-bind="dxScrollView:{scrollBy(),scrollByContent:false}">
+                <div data-option="dxTemplate{name: 'title'}">
+                    <p id='dx_title_popup'></p>
+                </div>
+                <div data-option="dxTemplate{name: 'content'}">
+                    <p id='dx_content_popup'></p>
+                </div>
             </div>
         </div>
 
