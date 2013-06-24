@@ -27,7 +27,7 @@ DiarioMuralDetalle = ko.observable(false);
 diarioMuralItemOnClick = function(e) {
     DiarioMuralDetalle(true);
     items = e.itemData;
-    jQuery('#dx_title_popup').html(items.name + ' ' + items.day + ' de Junio');
+    /*jQuery('#dx_title_popup').html(items.name + ' ' + items.day + ' de Junio');
     tareas = '<div><p><b>Matemáticas</b></p><p>Resolver la actividad 20, pagina 34</p></div>';
     tareas += '<div><p><b>Inglés</b></p><p>Control unidad 3a</p></div>';
     tareas += '<div><p><b>Educación Física</b></p><p>Test de Cooper</p></div>';
@@ -40,6 +40,6 @@ diarioMuralItemOnClick = function(e) {
     jQuery('#dx_content_popup').html(tareas);
     jQuery('#tareas_text').dxScrollView({
         'scrollByContent': true
-    });
+    });*/
 }
 
