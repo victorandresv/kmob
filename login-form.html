@@ -1,0 +1,27 @@
+<div data-options="dxView : { name: 'home' }">
+    <div data-options="dxContent : { targetPlaceholder: 'content' }">
+
+        <div id="toastContainer" data-bind="dxToast:{message:'The toast message', type:'success', displayTime: 3000}"></div>
+
+        <div data-bind="dxToolbar: { items: [ { align: 'center', text: 'BIENVENIDO A KWESKAR' } ] }"></div>
+
+        <div class="div-login">
+
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Email</div>
+                    <div id="email" class="dx-field-value" data-bind="dxTextBox: { mode: txtEmailMode, placeholder: txtEmailPlaceholder, text: txtEmailText }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Contraseña</div>
+                    <div id="password" class="dx-field-value" data-bind="dxTextBox: { mode: txtPasswordMode, placeholder: txtPasswordPlaceholder, text: txtPasswordText }"></div>
+                </div>
+                <div class="dx-field">
+                    <div data-bind="dxButton:{text:'Iniciar sesión', clickAction: buttonLogin, width: '100%'}"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
