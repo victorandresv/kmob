@@ -34,5 +34,8 @@ $(function() {
     Login.app.router.register(":view", {
         view: "home"
     });
+    Login.app.router.register("prod/:view", {
+        view: "app"
+    });
     Login.app.navigate();
 });
