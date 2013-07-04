@@ -2,12 +2,12 @@ package com.kweskarmobile;
 
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+
 import android.os.Build;
-import android.os.Bundle;
 import android.os.Build.VERSION_CODES;
+import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
-import android.view.Menu;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 
@@ -21,8 +21,10 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		mWebView = (WebView) findViewById(R.id.webView);
+		
 		if (Build.VERSION.SDK_INT >= VERSION_CODES.JELLY_BEAN) 
 			mWebView.getSettings().setAllowUniversalAccessFromFileURLs(true);
+		
 		mWebView.getSettings().setJavaScriptEnabled(true);
 		mWebView.getSettings().setDomStorageEnabled(true);
 		mWebView.setWebChromeClient(new WebChromeClient() {
@@ -41,13 +43,6 @@ public class MainActivity extends Activity {
 				title, Context.MODE_WORLD_READABLE));
 		osw.write(content);
 		osw.close();
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
 	}
 
 }
