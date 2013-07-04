@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/login.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">KWESKAR</h1>
+            
+            <div class="alert alert-error">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h4>ERROR</h4>
+                Todos los campos deben completarse
+            </div>
+            
+            <form class="form-horizontal">
+                <div class="control-group">
+                    <div class="controls">
+                        <input type="text" id="inputEmail" class="input-block-level" placeholder="Email"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <input type="password" id="inputPassword" class="input-block-level input-large" placeholder="Contraseña"/>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button id="submit_login" type="submit" class="btn btn-info btn-large btn-block" data-loading-text="Cargando">Entrar</button>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>
