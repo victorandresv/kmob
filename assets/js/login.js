@@ -21,7 +21,6 @@ var buttonLogin = function(){
                 DevExpress.ui.notify(callback.error_message, 'error', 3000);
             } else {
                 DevExpress.ui.notify('Bienvenido', 'success', 3000);
-                console.log('success');
             }
         });
     }
