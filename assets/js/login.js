@@ -20,8 +20,8 @@ var buttonLogin = function(){
             if(callback.error == 1){
                 DevExpress.ui.notify(callback.error_message, 'error', 3000);
             } else {
-                DevExpress.ui.notify('Bienvenido', 'success', 3000);                
-                location.href = 'file:///android_asset/app.html';
+                DevExpress.ui.notify('Bienvenido', 'success', 3000);
+                console.log('success');
             }
         });
     }
