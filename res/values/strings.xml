@@ -2,5 +2,8 @@
 <resources>
 
     <string name="app_name">Kweskar Mobile</string>
+    <string name="title_activity_service">ServiceActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
