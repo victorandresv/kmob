@@ -20,7 +20,8 @@ var buttonLogin = function(){
             if(callback.error == 1){
                 DevExpress.ui.notify(callback.error_message, 'error', 3000);
             } else {
-                DevExpress.ui.notify('Bienvenido', 'success', 3000);
+                DevExpress.ui.notify('Bienvenido', 'success', 3000);                
+                location.href = 'app.html';
             }
         });
     }
@@ -29,7 +30,7 @@ var buttonLogin = function(){
 
 window.Login = {};
 
-$(function() {
+jQuery(function() {
 
     Login.app = new DevExpress.framework.html.HtmlApplication({
         namespace: Login,
@@ -37,10 +38,7 @@ $(function() {
     });
 
     Login.app.router.register(":view", {
-        view: "home"
-    });
-    Login.app.router.register("prod/:view", {
-        view: "app"
+        view: "login"
     });
     Login.app.navigate();
 });

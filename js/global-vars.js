@@ -1,1 +1,1 @@
-var webservice_url = 'http://192.168.2.103/webservice.php';
+var webservice_url = 'http://mobile.kweskar.cl/webservice.php';
